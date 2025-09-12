@@ -19,6 +19,8 @@ import jquery from "../assets/jquery.svg";
 import php from "../assets/php.webp";
 import sql from "../assets/sql.webp";
 import laravel from "../assets/laravel.png";
+import FAQCarousel from "./FaqCrousel";
+import BlogList from "./BlogList";
 
 function Home() {
   return (
@@ -88,7 +90,7 @@ function Home() {
             <div id="home-second-hero-pic" className="mt-5 mb-5">
                 <img src={me} alt="" />
             </div>
-            <div id="home-second-hero-text" className="mt-5">
+            <div id="home-second-hero-text" className="mt-5 mb-5">
                <div>
                     <h1>I'am a <i> Webdeveloper & Creative Designer</i> & developer based in Pakistan.</h1>
                     <p>
@@ -144,21 +146,21 @@ function Home() {
         </div>
         
        <div class="row d-flex align-items-center justify-content-center" id="r1-p">
-            <div class="col p-2 g-col-6">
+            <div class="col p-2 g-col-6" id="dis">
                 <div class="project1"  data-aos="fade-up" data-aos-duration="4000">
                 <img src={port1} alt="Image"/>
                 <div class="overlay"></div>
                 <div class="icon"><i class="bi bi-mouse"></i></div>
                 </div>
             </div>
-            <div class="col p-2 g-col-6">
+            <div class="col p-2 g-col-6" id="dis">
                 <div class="project1"  data-aos="zoom-in-down">
                 <img src={port2} alt="Image"/>
                 <div class="overlay"></div>
                 <div class="icon"><i class="bi bi-mouse"></i></div>
                 </div>
             </div>
-            <div class="col p-2 g-col-6">
+            <div class="col p-2 g-col-6" id="dis">
                 <div class="project1"  data-aos="zoom-in-up">
                 <img src={port3} alt="Image"/>
                 <div class="overlay"></div>
@@ -166,35 +168,35 @@ function Home() {
                 </div>
             </div>
        
-            <div class="col p-2 g-col-6">
+            <div class="col p-2 g-col-6" id="dis">
                 <div class="project1"  data-aos="zoom-in">
                 <img src={port4} alt="Image"/>
                 <div class="overlay"></div>
                 <div class="icon"><i class="bi bi-mouse"></i></div>
                 </div>
             </div>
-            <div class="col p-2 g-col-6">
+            <div class="col p-2 g-col-6" id="dis">
                 <div class="project1"  data-aos="fade-up">
                 <img src={port5} alt="Image"/>
                 <div class="overlay"></div>
                 <div class="icon"><i class="bi bi-mouse"></i></div>
                 </div>
             </div>
-            <div class="col p-2 g-col-6">
+            <div class="col p-2 g-col-6" id="dis">
                 <div class="project1"  data-aos="fade-down">
                 <img src={port6} alt="Image"/>
                 <div class="overlay"></div>
                 <div class="icon"><i class="bi bi-mouse"></i></div>
                 </div>
             </div>
-            <div class="col p-2 g-col-6">
+            <div class="col p-2 g-col-6" id="dis">
                 <div class="project1"  data-aos="fade-up">
                 <img src={port7} alt="Image"/>
                 <div class="overlay"></div>
                 <div class="icon"><i class="bi bi-mouse"></i></div>
                 </div>
             </div>
-            <div class="col p-2 g-col-6">
+            <div class="col p-2 g-col-6" id="dis">
                 <div class="project1"  data-aos="fade-down">
                 <img src={port8} alt="Image"/>
                 <div class="overlay"></div>
@@ -305,7 +307,8 @@ function Home() {
           </div>
       </div>
     </div>
-
+<BlogList/>
+<FAQCarousel />
     </>
   );
 }
