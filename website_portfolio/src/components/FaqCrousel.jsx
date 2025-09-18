@@ -55,6 +55,7 @@ function FAQCarousel() {
         }}
       >
         <button
+         data-aos="fade-right"
           disabled
           style={{
             border: "1.5px solid #28E98C",
@@ -75,6 +76,7 @@ function FAQCarousel() {
         </button>
 
         <h2
+         data-aos="fade-up"
           style={{
             fontWeight: "800",
             fontSize: "2rem",
@@ -88,6 +90,7 @@ function FAQCarousel() {
         </h2>
 
         <p
+         data-aos="fade-left"
           style={{
             color: "#555",
             fontSize: "1rem",
@@ -106,6 +109,7 @@ function FAQCarousel() {
         </p>
 
         <p
+         data-aos="fade-up"
           style={{
             marginBottom: "1rem",
             fontWeight: "600",
@@ -143,7 +147,8 @@ function FAQCarousel() {
         </button>
 
         {/* FAQ Accordion */}
-        <div>
+        <div  data-aos="fade-up">
+
           {faqs.map((faq, idx) => {
             const isActive = idx === activeIndex;
             return (

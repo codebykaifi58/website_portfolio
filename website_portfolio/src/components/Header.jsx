@@ -8,7 +8,7 @@ function Header() {
       <nav className="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
         <div className="container" id="bg">
           <a href="#">
-            <img src="" width="100px" className="img-fluid" alt="Logo" />
+            <img src={logo} width="100px" className="img-fluid" alt="Logo" />
           </a>
 
           <button

@@ -44,10 +44,11 @@ export default function BlogList() {
     <div className="container-fluid" id="blog">
         <div className="container">
              <div className="blog-list-container" onMouseMove={hoveredArticle ? handleMouseMove : null}>
-                <h2>My Recent Blog & Articles</h2>
+                <h2 data-aos="fade-down">My Recent Blog & Articles</h2>
                 <div className="articles-list">
                     {articles.map((article) => (
                     <div
+                         data-aos="fade-up"
                         key={article.id}
                         className="article-item"
                         onMouseEnter={() => setHoveredArticle(article)}
@@ -66,7 +67,7 @@ export default function BlogList() {
                 </div>
 
                 {hoveredArticle && (
-                    <div
+                    <div 
                     className="hover-image-container"
                     style={{
                         top: mousePos.y + "px",

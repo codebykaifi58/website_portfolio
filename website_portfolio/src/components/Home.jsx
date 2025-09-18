@@ -21,15 +21,28 @@ import sql from "../assets/sql.webp";
 import laravel from "../assets/laravel.png";
 import FAQCarousel from "./FaqCrousel";
 import BlogList from "./BlogList";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Home() {
+useEffect(() => {
+  AOS.init({
+    duration: 1000,   // Animation ka speed (ms)
+    once: false,      // Animation har scroll par chale
+    mirror: true,     // Reverse animation jab scroll back kare
+    offset: 100,      // Scroll trigger point
+  });
+}, []);
+
+
   return (
     <>
     <div className="container-fluid" id="home-hero-container">
       <div id="home-fluid1">
         <div className="row">
           <div className="col mt-5">
-            <div style={{ display: "flex", alignItems: "center", gap: "10px" }} id="my-name">
+            <div data-aos="fade-right" style={{ display: "flex", alignItems: "center", gap: "10px" }} id="my-name">
               <img src={magic} alt="Magic Star" />
               <span style={{ color: 'white' }}>Hi, I'm Syed Kaif Shah.</span>
             </div>
@@ -38,7 +51,7 @@ function Home() {
 
         <div className="row">
           <div className="col mt-5" id="hero-heading-col">
-            <div id="home-hero-heading">
+            <div id="home-hero-heading" data-aos="fade-down">
               <h1>
                 Code the Future with
                 Innovative Development
@@ -49,7 +62,7 @@ function Home() {
 
         <div className="row" id="home-hero-expandable">
           <div className="col mt-5" id="expand-hero-content">
-            <div id="home-hero-expand1">
+            <div id="home-hero-expand1" data-aos="zoom-in">
               <div id="expand1-info-text">
                 <p>
                   Unlock the power of innovation with cutting-edge development solutions.
@@ -77,7 +90,7 @@ function Home() {
           </div>
 
           <div className="col" id="img-col">
-            <div id="expand2-img">
+            <div id="expand2-img" data-aos="zoom-out">
               <img src={me} alt="Profile" />
             </div>
           </div>
@@ -87,18 +100,18 @@ function Home() {
     </div>
     <div className="container-fluid" id="home-hero2-section">
         <div className="container" id="home-hero2">
-            <div id="home-second-hero-pic" className="mt-5 mb-5">
+            <div id="home-second-hero-pic" data-aos="zoom-in" className="mt-5 mb-5">
                 <img src={me} alt="" />
             </div>
             <div id="home-second-hero-text" className="mt-5 mb-5">
                <div>
-                    <h1>I'am a <i> Webdeveloper & Creative Designer</i> & developer based in Pakistan.</h1>
-                    <p>
+                    <h1 data-aos="fade-left">I'am a <i> Webdeveloper & Creative Designer</i> & developer based in Pakistan.</h1>
+                    <p data-aos="fade-right">
                       "I’m proficient in WordPress and frontend web development with HTML5, CSS3,
                       and JavaScript. I specialize in creating custom themes, integrating third-party
                         plugins, and ensuring websites are fully responsive and optimized."
                     </p>
-                    <button>Explore more</button>
+                    <button data-aos="fade-up">Explore more</button>
                </div>
             </div>
         </div>
@@ -107,14 +120,14 @@ function Home() {
       <div className="container" id="home-hero3">
           <div id="hero3-left-section" className="mt-5">
              <div id="hero3-control">
-                 <div id="magic-me"style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                 <div id="magic-me" data-aos="fade-right" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                       <img src={magic} alt="" />
                       <span style={{color:'#28E98C'}}>About Me</span>
                   </div>
-                  <h1>
+                  <h1 data-aos="fade-down">
                     My Story and Expertise
                   </h1>
-                  <p id="my-text">
+                  <p id="my-text" data-aos="fade-left">
                     With a passion for technology and years of experience, I specialize in web, mobile, 
                     AI, and blockchain development. My expertise lies in creating innovative, scalable,
                     and efficient solutions that help businesses.
@@ -125,12 +138,12 @@ function Home() {
                       <h1 id="two">600 + <br /> <p>Happy Customer</p></h1>
                   </div>
                   <div id="about-btn">
-                    <button>About Me</button> 
-                    <button>Contact Me</button>
+                    <button data-aos="fade-down">About Me</button> 
+                    <button data-aos="fade-down">Contact Me</button>
                   </div>
              </div>
           </div>
-          <div id="hero3-right-section" className="mt-5 mb-5">
+          <div id="hero3-right-section" data-aos="zoom-out" className="mt-5 mb-5">
             <img src={me} alt="" />
           </div>
       </div>
@@ -142,7 +155,7 @@ function Home() {
             <span data-aos="fade-up" data-aos-anchor-placement="top-bottom">AWESOME <i>PROJECTS</i></span>
         </div>
         <div class="row" id="row2-of-cont5">
-            <h6   data-aos="fade-up" data-aos-anchor-placement="top-bottom" >Select Work*(2023-2024)</h6>
+            <h6   data-aos="fade-down" data-aos-anchor-placement="top-bottom" >Select Work*(2023-2024)</h6>
         </div>
         
        <div class="row d-flex align-items-center justify-content-center" id="r1-p">
@@ -213,7 +226,7 @@ function Home() {
        </div>
         <div class="row py-5" id="cir">
             
-          <button>Explore More</button>
+          <button data-aos="fade-down">Explore More</button>
            
        </div>
             
@@ -226,7 +239,7 @@ function Home() {
       <div className="container" id="hero-experience">
           <div className="row">
               <div className="col mt-5 mb-4">
-                  <div id="magic-me"style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <div  data-aos="fade-right" id="magic-me"style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                       <img src={magic} alt="" />
                       <span style={{color:'#28E98C'}}>Experience</span>
                   </div>
@@ -234,36 +247,36 @@ function Home() {
           </div>
           <div className="row">
             <div className="col mb-2 mt-2" id="skill-heading">
-                <h1> Skills & Tools</h1>
+                <h1 data-aos="fade-up"> Skills & Tools</h1>
             </div>
           </div>
           <div className="row">
             <div className="col d-flex flex-wrap justify-content-center gap-3" id="skill-col">
-                <div id="bootstrap">
+                <div id="bootstrap" data-aos="fade-right">
                     <img src={bootstrap} alt="bootstrap" width={'40px'} />
                     <span>
                       Bootstrap CSS & CSS3
                     </span>
                 </div>
-                <div id="visual">
+                <div id="visual" data-aos="fade-right">
                     <img src={visual} alt="Visual"  />
                     <span>
                       Visual Basic
                     </span>
                 </div>
-                <div id="html">
+                <div id="html" data-aos="fade-right">
                     <img src={html} alt="HTML & CSS"  />
                     <span>
                       HTML & CSS
                     </span>
                 </div>
-                <div id="js">
+                <div id="js" data-aos="fade-right">
                     <img src={js} alt="JavaScript"  />
                     <span>
                       JavaScript
                     </span>
                 </div>
-                <div id="react">
+                <div id="react" data-aos="fade-right">
                     <img src={react} alt="React"  />
                     <span>
                       React
@@ -274,25 +287,25 @@ function Home() {
           </div>
           <div className="row">
             <div className="col mb-4 d-flex flex-wrap justify-content-center gap-3">
-              <div id="jquery">
+              <div id="jquery" data-aos="fade-right">
                     <img src={jquery} alt="JQuery" width={'20px'} />
                     <span>
                       JQuery
                     </span>
                 </div>
-                <div id="php">
+                <div id="php" data-aos="fade-right">
                     <img src={php} alt="php" width={'20px'} />
                     <span>
                       PHP
                     </span>
                 </div>
-                <div id="sql">
+                <div id="sql" data-aos="fade-right">
                     <img src={sql} alt="MySql" width={'20px'} />
                     <span>
                       MySQL
                     </span>
                 </div>
-                <div id="laravel">
+                <div id="laravel" data-aos="fade-right">
                     <img src={laravel} alt="laravel" width={'20px'} />
                     <span>
                       laravel
