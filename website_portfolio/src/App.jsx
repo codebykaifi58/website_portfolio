@@ -10,6 +10,9 @@ import './App.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import About from './components/About';
+import Awards from './components/Awards';
+
 function App() {
   return (
     <>
@@ -17,6 +20,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Awards" element={<Awards />} />
         </Routes>
         <Footer />
       </Router>
