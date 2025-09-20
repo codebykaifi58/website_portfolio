@@ -1,6 +1,8 @@
 import React from "react";
 import magic from '../assets/star-2.png';
 import me from '../assets/mypic5.png';
+import me2 from '../assets/mysecond.png';
+import me3 from '../assets/mythird.png';
 import port1 from '../assets/port1.png';
 import port2 from '../assets/port2.png';
 import port3 from '../assets/port2.png';
@@ -101,7 +103,7 @@ useEffect(() => {
     <div className="container-fluid" id="home-hero2-section">
         <div className="container" id="home-hero2">
             <div id="home-second-hero-pic" data-aos="zoom-in" className="mt-5 mb-5">
-                <img src={me} alt="" />
+                <img src={me2} alt="" />
             </div>
             <div id="home-second-hero-text" className="mt-5 mb-5">
                <div>
@@ -111,7 +113,9 @@ useEffect(() => {
                       and JavaScript. I specialize in creating custom themes, integrating third-party
                         plugins, and ensuring websites are fully responsive and optimized."
                     </p>
-                    <button data-aos="fade-up">Explore more</button>
+                    <button data-aos="fade-up" class="btn2">
+                      <span class="spn2">Explore more</span>
+                    </button>
                </div>
             </div>
         </div>
@@ -144,7 +148,7 @@ useEffect(() => {
              </div>
           </div>
           <div id="hero3-right-section" data-aos="zoom-out" className="mt-5 mb-5">
-            <img src={me} alt="" />
+            <img src={me3} alt="" />
           </div>
       </div>
     </div>
@@ -226,7 +230,9 @@ useEffect(() => {
        </div>
         <div class="row py-5" id="cir">
             
-          <button data-aos="fade-down">Explore More</button>
+          <button data-aos="fade-down" class="btn2">
+                      <span class="spn2">Explore more</span>
+               </button>
            
        </div>
             

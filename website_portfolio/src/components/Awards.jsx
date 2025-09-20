@@ -23,11 +23,11 @@ function Awards(){
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row" id="award-row">
                         <div className="col mb-5" id="award12-back">
-                            <div id="award1">
+                            <div id="award1" data-aos="fade-down">
                                 <img src={icon1} alt="" />
-                                <div id="award1-head">
+                                <div id="award1-head" >
                                     <h3>
                                         Best Website Design
                                     </h3>
@@ -37,9 +37,9 @@ function Awards(){
                                 </div>
                                 <img src={icon2} alt="" />
                             </div>
-                            <div id="award1">
+                            <div id="award2" data-aos="fade-up">
                                 <img src={icon3} alt="" />
-                                <div id="award1-head">
+                                <div id="award2-head">
                                     <h3>
                                         Best Website Design
                                     </h3>
@@ -51,9 +51,9 @@ function Awards(){
                             </div>
                         </div>
                         <div className="col mb-5" id="award34-back">
-                            <div id="award2">
+                            <div id="award3"data-aos="fade-up" >
                                 <img src={icon1} alt="" />
-                                <div id="award1-head">
+                                <div id="award3-head">
                                     <h3>
                                         Best Performance 
                                     </h3>
@@ -63,9 +63,9 @@ function Awards(){
                                 </div>
                                 <img src={icon2} alt="" />
                             </div>
-                            <div id="award2">
+                            <div id="award4" data-aos="fade-down">
                                 <img src={icon3} alt="" />
-                                <div id="award1-head">
+                                <div id="award4-head">
                                     <h3>
                                         Best Performance
                                     </h3>

@@ -121,7 +121,7 @@ function FAQCarousel() {
           Haven’t Found An Answer To Your Query?
         </p>
 
-        <button
+        {/* <button
           style={{
             backgroundColor: "#28E98C",
             color: "white",
@@ -144,8 +144,14 @@ function FAQCarousel() {
           }
         >
           Contact Us
-        </button>
-
+        </button> */}
+{/* <!-- From Uiverse.io by cssbuttons-io -->  */}
+<button class="learn-more mb-5" id="btn-cont">
+  <span class="circle" aria-hidden="true">
+  <span class="icon arrow"></span>
+  </span>
+  <span class="button-text">Contact Me</span>
+</button>
         {/* FAQ Accordion */}
         <div  data-aos="fade-up">
 
