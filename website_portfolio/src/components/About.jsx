@@ -212,6 +212,7 @@ function About() {
             </div>
         </div>
        <Awards />
+
     </>
 
   );
