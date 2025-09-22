@@ -391,7 +391,7 @@ function Services(){
                                 </div>
                                 <div id="text-area1">
                                     <h5 data-aos="fade-up">Custom WordPress Sites That Perform</h5>
-                                    <p data-aos="fade-up">
+                                     <p data-aos="fade-up">
                                         I create responsive, modern websites tailored to your business needs, with a clean design, functional layout, and mobile optimization.
                                     </p>
                                     <h6 data-aos="fade-up">
