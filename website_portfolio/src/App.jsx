@@ -13,6 +13,9 @@ import Home from './components/Home';
 import About from './components/About';
 import Awards from './components/Awards';
 import Services from './components/Services';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import ContactForm from './components/ContactForm';
 function App() {
   return (
     <>
@@ -23,6 +26,8 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Awards" element={<Awards />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

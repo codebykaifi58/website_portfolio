@@ -2103,6 +2103,248 @@ html {
   letter-spacing: 1px;
 }
 
+/* Portfolio */
+
+#hero-port{
+  background-color: #1C1D20;
+  width: 100vw;
+}
+#port-main-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#port-main-data h5{
+  color: #28E98C;
+}
+#port-main-data h1{
+  color: white;
+  font-size: 50px;
+}
+#port-main-data p{
+  
+  color: rgb(201, 194, 194);
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+#port-main-pic img{
+  width: 650px;
+}
+
+
+/* PORTFOIO PAGE STYLING */
+#port-cont1{background-color: #161618;}
+#port-r1 span{font-size: 9rem;color: white;font-family:  "Manrope", sans-serif;font-weight: 550;}
+#port-r1 span i{color: #28E98C;font-family: "Playfair Display", serif;margin-left: 150px;font-weight: 400;}
+
+#port-cont2{background-color: #171717;}
+#port-cont2-r1 span{font-size: 20px;color: #0AD2AD;text-align: center;}
+#port-cont2-r2 span{text-align: center;color: white;font-size: 25px;}
+#port-cont2-r3 span{text-align: center;font-size: 35px;color: white;}
+#rr1 span{font-size: 35px;color: white;font-family:"Manrope", sans-serif;text-align: center;}
+#rr2 span{font-size: 35px;color: white;font-family:  "Manrope", sans-serif;text-align: center;}
+
+
+/* Contact page */
+.bg-gradient {
+  background: linear-gradient(90deg, #e8fff3 0%, #ffffff 100%);
+}
+
+#hero-contact{
+  width: 100vw;
+  background-color: #1C1D20;
+}
+/* Full Dark Background Gradient */
+.contact-wrapper {
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #2a2a2a, #141414);
+  background-size: 400% 400%;
+  animation: darkGradientMove 3s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Smooth Animation for Dark Gradient */
+@keyframes darkGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Card Styling */
+.contact-form-card {
+  background: #1e1e1e;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* Form Title */
+.form-title {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.form-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #0ad2ad;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* Input Group */
+.input-group-custom {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.custom-input {
+  border-radius: 12px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #333;
+  transition: all 0.3s ease;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.custom-input::placeholder {
+  color: #aaa;
+}
+
+/* Dynamic Active State */
+.input-group-custom.active .custom-input,
+.custom-input:focus {
+  border-color: #28E98C;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 10px rgba(10, 210, 173, 0.6);
+  outline: none;
+  color: #28E98C;
+}
+
+/* Submit Button */
+.custom-btn {
+  background-color: #28E98C;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #5ae6a2;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(10, 210, 173, 0.5);
+}
+
+/* Dark Section Background */
+.testimonial-section {
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #2a2a2a, #141414);
+  color: #fff;
+  background-size: 400% 400%;
+  animation: darkGradientMove 10s ease infinite;
+}
+
+@keyframes darkGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Badge */
+.badge-custom {
+  background: rgba(10, 210, 173, 0.2);
+  color: #0ad2ad;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  max-width: 600px;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* User Image */
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0ad2ad;
+}
+
+/* Feedback Text */
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Rating Stars */
+.testimonial-rating .star {
+  color: #f4c150;
+  font-size: 20px;
+  margin: 0 2px;
+}
+
+
+
+
+
+
+
 
 
 
